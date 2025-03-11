@@ -29,7 +29,7 @@ const HeroSection = ({
     "Legal Research",
     "Policy Analysis",
   ],
-  imageUrl = "/kshma-profile.jpg",
+  imageUrl = "/Kshma_professional.svg",
   resumeUrl = "#",
 }: HeroSectionProps) => {
   return (
@@ -126,6 +126,11 @@ const HeroSection = ({
                 src={imageUrl}
                 alt={name}
                 className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white duration-500 hover:scale-105"
+                onError={(e) => {
+                  console.error("Image failed to load:", e);
+                  e.currentTarget.src =
+                    "https://drive.google.com/file/d/1ntL1hI77PdJGtyrkvViUacOFeGN5KuPo/view?usp=sharing";
+                }}
               />
             </div>
           </div>
