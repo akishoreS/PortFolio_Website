@@ -76,14 +76,14 @@ const SkillsSection = ({
   ],
 }: SkillsSectionProps) => {
   return (
-    <section id="skills" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="skills" className="py-10 sm:py-12 md:py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#0A2463] mb-4">{title}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {categories.map((category, index) => (
             <Card
               key={index}

@@ -49,13 +49,13 @@ const Navbar = ({
           <div className="flex items-center">
             <a
               href="#home"
-              className="text-2xl font-bold text-[#D4AF37]"
+              className="flex items-center"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
             >
-              {logo}
+              <span className="text-2xl font-bold text-[#D4AF37]">{logo}</span>
             </a>
           </div>
 

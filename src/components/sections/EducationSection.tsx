@@ -97,14 +97,14 @@ const EducationSection = ({
   ],
 }: EducationSectionProps) => {
   return (
-    <section id="education" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="education" className="py-10 sm:py-12 md:py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#0A2463] mb-2">{title}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {educationList.map((education, index) => (
             <Card
               key={index}

@@ -215,7 +215,10 @@ const ExperienceSection = ({
   };
 
   return (
-    <section id="experience" className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+    <section
+      id="experience"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-16 bg-white"
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial="hidden"

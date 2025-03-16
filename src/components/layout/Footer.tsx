@@ -24,7 +24,7 @@ const Footer = ({
   copyrightYear = new Date().getFullYear(),
 }: FooterProps) => {
   return (
-    <footer className="w-full bg-[#0A2463] text-white py-8 px-4 md:px-8 animate-fade-in">
+    <footer className="w-full bg-[#0A2463] text-white py-6 sm:py-8 px-4 sm:px-6 md:px-8 animate-fade-in">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <div className="mb-4 md:mb-0">

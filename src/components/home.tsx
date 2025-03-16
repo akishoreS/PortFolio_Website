@@ -19,7 +19,7 @@ const Home = ({
   studentName = "KSHMA PRIYA",
   studentTitle = "Law Student & Legal Intern",
   studentIntro = "Dedicated law student pursuing LL.B. at Lloyd Law College with experience in legal research, drafting, and mediation. Passionate about women's rights and providing legal aid to underprivileged individuals.",
-  profileImage = "/Kshma_professional.svg",
+  profileImage = "/kshma-profile.jpg",
 }: HomeProps) => {
   // Social media links used across components
   const socialLinks = {

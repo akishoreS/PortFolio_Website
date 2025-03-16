@@ -29,25 +29,25 @@ const HeroSection = ({
     "Legal Research",
     "Policy Analysis",
   ],
-  imageUrl = "/Kshma_professional.svg",
+  imageUrl = "/kshma-profile.jpg",
   resumeUrl = "#",
 }: HeroSectionProps) => {
   return (
-    <section className="w-full py-16 md:py-24 bg-white overflow-hidden">
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+    <section className="w-full py-12 sm:py-16 md:py-24 bg-white overflow-hidden">
+      <div className="container px-4 sm:px-6 mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-16">
           <div className="w-full md:w-1/2 order-2 md:order-1">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0A2463] mb-4 animate-slide-in-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#0A2463] mb-3 sm:mb-4 animate-slide-in-left">
               {name}
             </h1>
             <h2
-              className="text-xl md:text-2xl font-medium text-[#D4AF37] mb-6 animate-slide-in-left"
+              className="text-lg sm:text-xl md:text-2xl font-medium text-[#D4AF37] mb-4 sm:mb-6 animate-slide-in-left"
               style={{ animationDelay: "0.2s" }}
             >
               {title}
             </h2>
             <p
-              className="text-lg text-gray-700 mb-8 leading-relaxed animate-slide-in-left"
+              className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed animate-slide-in-left"
               style={{ animationDelay: "0.4s" }}
             >
               {introduction}
@@ -119,17 +119,17 @@ const HeroSection = ({
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
+          <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center mb-8 md:mb-0">
             <div className="relative animate-float">
               <div className="absolute -inset-1 rounded-full bg-[#D4AF37] opacity-20 blur animate-pulse"></div>
               <img
                 src={imageUrl}
                 alt={name}
-                className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white duration-500 hover:scale-105"
+                className="relative rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover border-4 border-white duration-500 hover:scale-105"
                 onError={(e) => {
                   console.error("Image failed to load:", e);
                   e.currentTarget.src =
-                    "https://drive.google.com/file/d/1ntL1hI77PdJGtyrkvViUacOFeGN5KuPo/view?usp=sharing";
+                    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80";
                 }}
               />
             </div>

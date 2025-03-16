@@ -80,14 +80,14 @@ const PublicationsSection = ({
   });
 
   return (
-    <section id="publications" className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="publications" className="py-10 sm:py-12 md:py-16 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#0A2463] mb-4">{title}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">{description}</p>
         </div>
 
-        <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mb-6 sm:mb-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
           {/* Search Bar */}
           <div className="relative w-full md:w-64">
             <input
