@@ -1,9 +1,13 @@
 import { Suspense } from "react";
-import { useRoutes, Routes, Route } from "react-router-dom";
+import { Routes, Route, useRoutes } from "react-router-dom";
 import Home from "./components/home";
 import routes from "tempo-routes";
 
 function App() {
+  // Use the useRoutes hook to properly render tempo routes
+  const tempoRoutes =
+    import.meta.env.VITE_TEMPO === "true" ? useRoutes(routes) : null;
+
   return (
     <Suspense
       fallback={
@@ -13,10 +17,15 @@ function App() {
       }
     >
       <>
+        {/* Tempo routes */}
+        {tempoRoutes}
+
         <Routes>
           <Route path="/" element={<Home />} />
+          {import.meta.env.VITE_TEMPO === "true" && (
+            <Route path="/tempobook/*" element={null} />
+          )}
         </Routes>
-        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
     </Suspense>
   );
